@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP +18V
+K POWER, PWR
+$ENDCMP
+#
+$CMP -15VA
+K POWER, PWR
+$ENDCMP
+#
+$CMP -18V
+K POWER, PWR
+$ENDCMP
+#
+#End Doc Library
