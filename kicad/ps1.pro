@@ -1,4 +1,4 @@
-update=Wednesday, December 28, 2016 'PMt' 06:44:13 PM
+update=Sunday, January 01, 2017 'PMt' 04:24:41 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -61,7 +61,7 @@ version=1
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=
+PlotDirectoryName=../gfx/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=

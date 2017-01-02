@@ -81,7 +81,7 @@ L CP1 C2
 U 1 1 5850631C
 P 5000 4150
 F 0 "C2" H 4700 4200 50  0000 L CNN
-F 1 "2200uF" H 4600 4100 50  0000 L CNN
+F 1 "8200uF" H 4600 4100 50  0000 L CNN
 F 2 "" H 5000 4150 50  0001 C CNN
 F 3 "" H 5000 4150 50  0000 C CNN
 	1    5000 4150
@@ -92,7 +92,7 @@ L CP1 C3
 U 1 1 585064F3
 P 5000 5050
 F 0 "C3" H 4700 5000 50  0000 L CNN
-F 1 "2200uF" H 4600 5100 50  0000 L CNN
+F 1 "8200uF" H 4600 5100 50  0000 L CNN
 F 2 "" H 5000 5050 50  0001 C CNN
 F 3 "" H 5000 5050 50  0000 C CNN
 	1    5000 5050
@@ -108,39 +108,6 @@ F 2 "" H 7938 4000 50  0001 C CNN
 F 3 "" H 7900 4150 50  0000 C CNN
 	1    7900 4150
 	-1   0    0    -1  
-$EndComp
-$Comp
-L FUSE F2
-U 1 1 58508391
-P 1800 1000
-F 0 "F2" H 1750 850 50  0000 C CNN
-F 1 "4A (slow)" H 1750 750 50  0000 C CNN
-F 2 "" H 1800 1000 50  0001 C CNN
-F 3 "" H 1800 1000 50  0000 C CNN
-	1    1800 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L CONN_01X03 P2
-U 1 1 585305AF
-P 1200 1650
-F 0 "P2" H 1200 1850 50  0000 C CNN
-F 1 "CONN_01X03" V 1300 1650 50  0000 C CNN
-F 2 "" H 1200 1650 50  0001 C CNN
-F 3 "" H 1200 1650 50  0000 C CNN
-	1    1200 1650
-	-1   0    0    -1  
-$EndComp
-$Comp
-L CONN_01X03 P1
-U 1 1 585AC4E3
-P 12500 4400
-F 0 "P1" H 12500 4600 50  0000 C CNN
-F 1 "CONN_01X03" V 12600 4400 50  0000 C CNN
-F 2 "" H 12500 4400 50  0001 C CNN
-F 3 "" H 12500 4400 50  0000 C CNN
-	1    12500 4400
-	1    0    0    -1  
 $EndComp
 $Comp
 L C C1
@@ -169,7 +136,7 @@ L FUSE F1
 U 1 1 58615547
 P 1100 4300
 F 0 "F1" V 950 4550 50  0000 C CNN
-F 1 "100 C" V 1050 4550 50  0000 C CNN
+F 1 "100 deg C" V 1050 4550 50  0000 C CNN
 F 2 "" H 1100 4300 50  0000 C CNN
 F 3 "" H 1100 4300 50  0000 C CNN
 	1    1100 4300
@@ -242,17 +209,6 @@ F 3 "" H 8850 5050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch_DPST SW1
-U 1 1 58616F23
-P 2500 1650
-F 0 "SW1" H 2800 1700 50  0000 C CNN
-F 1 "Switch_DPST" H 2800 1600 50  0000 C CNN
-F 2 "" H 2500 1650 50  0000 C CNN
-F 3 "" H 2500 1650 50  0000 C CNN
-	1    2500 1650
-	1    0    0    -1  
-$EndComp
-$Comp
 L Diode_Bridge D1
 U 1 1 58505332
 P 3850 4600
@@ -263,80 +219,6 @@ F 3 "" H 3850 4600 50  0000 C CNN
 	1    3850 4600
 	1    0    0    -1  
 $EndComp
-$Comp
-L TRANSFO L1
-U 1 1 58617B46
-P 4300 1650
-F 0 "L1" V 4500 1650 50  0000 C CNN
-F 1 "TBD uH" V 4600 1650 50  0000 C CNN
-F 2 "" H 4300 1650 50  0000 C CNN
-F 3 "" H 4300 1650 50  0000 C CNN
-	1    4300 1650
-	0    1    1    0   
-$EndComp
-$Comp
-L R R6
-U 1 1 586196C9
-P 3200 1650
-F 0 "R6" V 3280 1650 50  0000 C CNN
-F 1 "R" V 3200 1650 50  0000 C CNN
-F 2 "" V 3130 1650 50  0000 C CNN
-F 3 "" H 3200 1650 50  0000 C CNN
-	1    3200 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C12
-U 1 1 58619726
-P 3600 1650
-F 0 "C12" H 3625 1750 50  0000 L CNN
-F 1 "C" H 3625 1550 50  0000 L CNN
-F 2 "" H 3638 1500 50  0000 C CNN
-F 3 "" H 3600 1650 50  0000 C CNN
-	1    3600 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C13
-U 1 1 58619C2D
-P 4900 1450
-F 0 "C13" H 4925 1550 50  0000 L CNN
-F 1 "C" H 4925 1350 50  0000 L CNN
-F 2 "" H 4938 1300 50  0000 C CNN
-F 3 "" H 4900 1450 50  0000 C CNN
-	1    4900 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C14
-U 1 1 58619CE9
-P 4900 1850
-F 0 "C14" H 4925 1950 50  0000 L CNN
-F 1 "C" H 4925 1750 50  0000 L CNN
-F 2 "" H 4938 1700 50  0000 C CNN
-F 3 "" H 4900 1850 50  0000 C CNN
-	1    4900 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Earth #PWR2
-U 1 1 58619DEF
-P 5150 1800
-F 0 "#PWR2" H 5150 1550 50  0001 C CNN
-F 1 "Earth" H 5150 1650 50  0001 C CNN
-F 2 "" H 5150 1800 50  0000 C CNN
-F 3 "" H 5150 1800 50  0000 C CNN
-	1    5150 1800
-	1    0    0    -1  
-$EndComp
-Text Notes 850  750  0    60   ~ 0
-AC Power Entry Module
-Text Notes 1450 2200 0    60   ~ 0
-IEC320 Inlet\n3-Prong Male
-Text Label 5850 1000 0    60   ~ 0
-L'
-Text Label 5850 2300 0    60   ~ 0
-N'
 $Comp
 L VR VR1
 U 1 1 5861562B
@@ -349,47 +231,15 @@ F 3 "" H 1100 4900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 800  3950 2    60   ~ 0
-L
+L'
 Text Label 800  5250 2    60   ~ 0
-N
-$Comp
-L Earth_Protective #PWR1
-U 1 1 58622E13
-P 1600 1650
-F 0 "#PWR1" H 1850 1400 50  0001 C CNN
-F 1 "Earth_Protective" H 2050 1500 50  0001 C CNN
-F 2 "" H 1600 1550 50  0000 C CNN
-F 3 "" H 1600 1550 50  0000 C CNN
-	1    1600 1650
-	1    0    0    -1  
-$EndComp
-Text Label 1600 1650 0    60   ~ 0
-PE
-Text Label 5850 1650 0    60   ~ 0
-PE'
-$Comp
-L Earth #PWR3
-U 1 1 58623735
-P 5700 1800
-F 0 "#PWR3" H 5700 1550 50  0001 C CNN
-F 1 "Earth" H 5700 1650 50  0001 C CNN
-F 2 "" H 5700 1800 50  0000 C CNN
-F 3 "" H 5700 1800 50  0000 C CNN
-	1    5700 1800
-	1    0    0    -1  
-$EndComp
-Text Label 1400 1550 0    60   ~ 0
-L
-Text Label 1400 1750 0    60   ~ 0
-N
-Text Notes 5400 750  2    60   ~ 0
-Schurter Inc. DD12.4121.111
+N'
 $Comp
 L CP1 C4
 U 1 1 5862538A
 P 5550 4150
 F 0 "C4" H 5250 4200 50  0000 L CNN
-F 1 "2200uF" H 5150 4100 50  0000 L CNN
+F 1 "8200uF" H 5150 4100 50  0000 L CNN
 F 2 "" H 5550 4150 50  0001 C CNN
 F 3 "" H 5550 4150 50  0000 C CNN
 	1    5550 4150
@@ -400,7 +250,7 @@ L CP1 C5
 U 1 1 58625390
 P 5550 5050
 F 0 "C5" H 5250 5000 50  0000 L CNN
-F 1 "2200uF" H 5150 5100 50  0000 L CNN
+F 1 "8200uF" H 5150 5100 50  0000 L CNN
 F 2 "" H 5550 5050 50  0001 C CNN
 F 3 "" H 5550 5050 50  0000 C CNN
 	1    5550 5050
@@ -412,10 +262,6 @@ Text Notes 2900 3850 0    60   ~ 0
 Damping\nNetwork
 Text Notes 1700 3850 0    60   ~ 0
 Isolating Step\nDown Transformer
-Text Notes 4250 2450 0    60   ~ 0
-Lowpass Filter (LC Pi)
-Text Notes 1900 2450 0    60   ~ 0
-Switch with line-rated capacitor and bleeder
 Text Notes 950  3850 0    60   ~ 0
 Transient\nSuppressor
 Text Notes 3750 3850 0    60   ~ 0
@@ -492,7 +338,7 @@ L CP1 C10
 U 1 1 58629851
 P 8400 4150
 F 0 "C10" H 8100 4200 50  0000 L CNN
-F 1 "220uF" H 8050 4100 50  0000 L CNN
+F 1 "SPARE" H 8050 4100 50  0000 L CNN
 F 2 "" H 8400 4150 50  0001 C CNN
 F 3 "" H 8400 4150 50  0000 C CNN
 	1    8400 4150
@@ -513,17 +359,11 @@ Text Notes 8650 3600 0    60   ~ 0
 Min. Load\nBleeders
 Text Notes 8250 3500 0    60   ~ 0
 Filter
-Text Label 9900 3650 0    60   ~ 0
+Text Label 10450 3650 0    60   ~ 0
 +15V
-Text Label 9900 5550 0    60   ~ 0
+Text Label 10450 5550 0    60   ~ 0
 -15V
-Text Label 12300 4300 2    60   ~ 0
-+15V
-Text Label 12300 4500 2    60   ~ 0
--15V
-Text Label 12300 4400 2    60   ~ 0
-GND
-Text Label 9900 4600 0    60   ~ 0
+Text Label 10450 4600 0    60   ~ 0
 GND
 Text Notes 8150 -1250 0    79   ~ 16
 Release History
@@ -541,81 +381,183 @@ Text Notes 11550 -1100 0    63   ~ 13
 Date
 Text Notes 11550 -950 0    60   ~ 0
 26 December 2016
-Wire Wire Line
-	4900 2300 4900 2000
-Wire Wire Line
-	4900 1600 4900 1700
-Wire Wire Line
-	4900 1000 4900 1300
-Wire Wire Line
-	4500 1250 4500 1000
-Connection ~ 4900 1000
-Wire Wire Line
-	4500 2050 4500 2300
-Connection ~ 4900 2300
-Wire Wire Line
-	4100 1000 4100 1250
-Wire Wire Line
-	2800 1000 4100 1000
-Wire Wire Line
-	3600 1000 3600 1500
-Wire Wire Line
-	3600 2300 3600 1800
-Wire Wire Line
-	2800 2300 4100 2300
-Wire Wire Line
-	4100 2300 4100 2050
-Wire Wire Line
-	3200 2300 3200 1800
-Connection ~ 3600 2300
-Wire Wire Line
-	3200 1000 3200 1500
-Connection ~ 3600 1000
-Wire Wire Line
-	2800 1450 2800 1000
-Connection ~ 3200 1000
-Wire Wire Line
-	2800 1850 2800 2300
-Connection ~ 3200 2300
-Wire Wire Line
-	2050 1000 2200 1000
-Wire Wire Line
-	2200 1000 2200 1450
-Wire Wire Line
-	1400 1550 1400 1000
-Wire Wire Line
-	1400 1000 1550 1000
-Wire Wire Line
-	1400 1750 1400 2300
-Wire Wire Line
-	1400 2300 2200 2300
-Wire Wire Line
-	2200 2300 2200 1850
-Wire Wire Line
-	4900 1650 5150 1650
-Wire Wire Line
-	5150 1650 5150 1800
-Connection ~ 4900 1650
-Wire Notes Line
-	5400 2500 850  2500
-Wire Notes Line
-	850  800  5400 800 
-Wire Notes Line
-	5400 800  5400 2500
-Wire Notes Line
-	850  2500 850  800 
-Connection ~ 5400 1000
-Connection ~ 5400 2300
-Wire Wire Line
-	4500 1000 5850 1000
-Wire Wire Line
-	4500 2300 5850 2300
-Wire Wire Line
-	1400 1650 1600 1650
-Wire Wire Line
-	5700 1800 5700 1650
-Wire Wire Line
-	5700 1650 5850 1650
+Text Notes 10650 -950 0    60   ~ 0
+Matthew Pare
+Text Notes 650  6600 0    60   ~ 0
+C1 - C4: Rubycon 8200µF 80V Aluminum Capacitors Radial, Can - Snap-In 3000 Hrs @ 85°C (80USC8200MEFCSN35X45)\nC6: A 0.33 uF or larger tantalum, mylar or other capacitor having low internal impedance at high frequencies should be chosen.\nC7: A 2.2 uF must be solid tantalum. If aluminium electrolytic are used, at least ten times value should be selected.\nC8 - C9: A 1 uF is required if regulator is located an appreciable distance from power supply filter. Also used to improve transient response.\n
+$Comp
+L LED D6
+U 1 1 5869BAB4
+P 9850 4350
+F 0 "D6" H 9850 4450 50  0000 C CNN
+F 1 "LED" H 9850 4250 50  0000 C CNN
+F 2 "" H 9850 4350 50  0000 C CNN
+F 3 "" H 9850 4350 50  0000 C CNN
+	1    9850 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R6
+U 1 1 5869BBE9
+P 9850 3850
+F 0 "R6" V 9930 3850 50  0000 C CNN
+F 1 "R" V 9850 3850 50  0000 C CNN
+F 2 "" V 9780 3850 50  0000 C CNN
+F 3 "" H 9850 3850 50  0000 C CNN
+	1    9850 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 5869BD6A
+P 10100 3850
+F 0 "R8" V 10180 3850 50  0000 C CNN
+F 1 "R" V 10100 3850 50  0000 C CNN
+F 2 "" V 10030 3850 50  0000 C CNN
+F 3 "" H 10100 3850 50  0000 C CNN
+	1    10100 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P6
+U 1 1 5869BDEF
+P 10300 4200
+F 0 "P6" H 10300 4350 50  0000 C CNN
+F 1 "CONN_01X02" V 10400 4200 50  0000 C CNN
+F 2 "" H 10300 4200 50  0000 C CNN
+F 3 "" H 10300 4200 50  0000 C CNN
+	1    10300 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D7
+U 1 1 5869C04C
+P 9850 5300
+F 0 "D7" H 9850 5400 50  0000 C CNN
+F 1 "LED" H 9850 5200 50  0000 C CNN
+F 2 "" H 9850 5300 50  0000 C CNN
+F 3 "" H 9850 5300 50  0000 C CNN
+	1    9850 5300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R7
+U 1 1 5869C052
+P 9850 4800
+F 0 "R7" V 9930 4800 50  0000 C CNN
+F 1 "R" V 9850 4800 50  0000 C CNN
+F 2 "" V 9780 4800 50  0000 C CNN
+F 3 "" H 9850 4800 50  0000 C CNN
+	1    9850 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R9
+U 1 1 5869C058
+P 10100 4800
+F 0 "R9" V 10180 4800 50  0000 C CNN
+F 1 "R" V 10100 4800 50  0000 C CNN
+F 2 "" V 10030 4800 50  0000 C CNN
+F 3 "" H 10100 4800 50  0000 C CNN
+	1    10100 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P7
+U 1 1 5869C05E
+P 10300 5150
+F 0 "P7" H 10300 5300 50  0000 C CNN
+F 1 "CONN_01X02" V 10400 5150 50  0000 C CNN
+F 2 "" H 10300 5150 50  0000 C CNN
+F 3 "" H 10300 5150 50  0000 C CNN
+	1    10300 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 P2
+U 1 1 5869DDD1
+P 7450 1300
+F 0 "P2" H 7450 1500 50  0000 C CNN
+F 1 "CONN_01X03" V 7550 1300 50  0000 C CNN
+F 2 "" H 7450 1300 50  0000 C CNN
+F 3 "" H 7450 1300 50  0000 C CNN
+	1    7450 1300
+	1    0    0    -1  
+$EndComp
+Text Notes 9800 3600 0    60   ~ 0
+Power\nIndicators
+$Comp
+L CONN_01X02 P1
+U 1 1 586A2C8B
+P 1050 1500
+F 0 "P1" H 1050 1650 50  0000 C CNN
+F 1 "CONN_01X02" V 1150 1500 50  0000 C CNN
+F 2 "" H 1050 1500 50  0000 C CNN
+F 3 "" H 1050 1500 50  0000 C CNN
+	1    1050 1500
+	1    0    0    -1  
+$EndComp
+Text Label 850  1450 2    60   ~ 0
+L'
+Text Label 850  1550 2    60   ~ 0
+N'
+Text Label 7250 1200 2    60   ~ 0
++15V
+Text Label 7250 1300 2    60   ~ 0
+GND
+Text Label 7250 1400 2    60   ~ 0
+-15V
+$Comp
+L CONN_01X03 P3
+U 1 1 586A4629
+P 7450 1900
+F 0 "P3" H 7450 2100 50  0000 C CNN
+F 1 "CONN_01X03" V 7550 1900 50  0000 C CNN
+F 2 "" H 7450 1900 50  0000 C CNN
+F 3 "" H 7450 1900 50  0000 C CNN
+	1    7450 1900
+	1    0    0    -1  
+$EndComp
+Text Label 7250 1800 2    60   ~ 0
++15V
+Text Label 7250 1900 2    60   ~ 0
+GND
+Text Label 7250 2000 2    60   ~ 0
+-15V
+$Comp
+L CONN_01X03 P4
+U 1 1 586A48E3
+P 8350 1300
+F 0 "P4" H 8350 1500 50  0000 C CNN
+F 1 "CONN_01X03" V 8450 1300 50  0000 C CNN
+F 2 "" H 8350 1300 50  0000 C CNN
+F 3 "" H 8350 1300 50  0000 C CNN
+	1    8350 1300
+	1    0    0    -1  
+$EndComp
+Text Label 8150 1200 2    60   ~ 0
++15V
+Text Label 8150 1300 2    60   ~ 0
+GND
+Text Label 8150 1400 2    60   ~ 0
+-15V
+$Comp
+L CONN_01X03 P5
+U 1 1 586A48EC
+P 8350 1900
+F 0 "P5" H 8350 2100 50  0000 C CNN
+F 1 "CONN_01X03" V 8450 1900 50  0000 C CNN
+F 2 "" H 8350 1900 50  0000 C CNN
+F 3 "" H 8350 1900 50  0000 C CNN
+	1    8350 1900
+	1    0    0    -1  
+$EndComp
+Text Label 8150 1800 2    60   ~ 0
++15V
+Text Label 8150 1900 2    60   ~ 0
+GND
+Text Label 8150 2000 2    60   ~ 0
+-15V
 Wire Wire Line
 	3850 3950 3850 4200
 Wire Wire Line
@@ -673,7 +615,6 @@ Wire Wire Line
 Connection ~ 3000 3950
 Wire Wire Line
 	2450 4400 2450 3950
-Connection ~ 2450 3950
 Wire Wire Line
 	2450 4800 2450 5250
 Wire Wire Line
@@ -706,12 +647,9 @@ Wire Wire Line
 	6000 4300 6000 4900
 Connection ~ 6500 4600
 Wire Wire Line
-	7150 3950 7150 5250
-Connection ~ 7150 4600
-Wire Wire Line
 	4350 3650 6750 3650
 Wire Wire Line
-	7550 3650 9900 3650
+	7550 3650 10450 3650
 Wire Wire Line
 	7900 3650 7900 4000
 Wire Wire Line
@@ -719,9 +657,9 @@ Wire Wire Line
 Wire Wire Line
 	7900 5550 7900 5200
 Wire Wire Line
-	7550 5550 9900 5550
+	7550 5550 10450 5550
 Wire Wire Line
-	4550 4600 9900 4600
+	4550 4600 10450 4600
 Wire Wire Line
 	8400 4300 8400 4900
 Connection ~ 7900 4600
@@ -800,8 +738,48 @@ Wire Notes Line
 	8450 -1200 8450 -350
 Wire Notes Line
 	11500 -1200 11500 -350
-Text Notes 10650 -950 0    60   ~ 0
-Matthew Pare
 Wire Notes Line
 	10600 -1200 10600 -350
+Wire Wire Line
+	9850 3700 9850 3650
+Connection ~ 9850 3650
+Wire Wire Line
+	9850 4150 9850 4000
+Wire Wire Line
+	9850 4550 9850 4650
+Connection ~ 9850 4600
+Wire Wire Line
+	9850 4950 9850 5100
+Wire Wire Line
+	9850 5500 9850 5550
+Connection ~ 9850 5550
+Wire Wire Line
+	10100 3650 10100 3700
+Connection ~ 10100 3650
+Wire Wire Line
+	10100 4000 10100 4150
+Wire Wire Line
+	10100 4250 10100 4650
+Connection ~ 10100 4600
+Wire Wire Line
+	10100 4950 10100 5100
+Wire Wire Line
+	10100 5200 10100 5550
+Connection ~ 10100 5550
+Wire Wire Line
+	7150 3950 7150 5250
+Connection ~ 7150 4600
+$Comp
+L PWR_FLAG #FLG02
+U 1 1 586A90BD
+P 3850 1400
+F 0 "#FLG02" H 3850 1495 50  0001 C CNN
+F 1 "PWR_FLAG" H 3850 1580 50  0000 C CNN
+F 2 "" H 3850 1400 50  0000 C CNN
+F 3 "" H 3850 1400 50  0000 C CNN
+	1    3850 1400
+	1    0    0    -1  
+$EndComp
+Text Label 3850 1400 3    60   ~ 0
+GND
 $EndSCHEMATC
