@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:ps1-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -345,7 +346,7 @@ Text Notes 9350 950  0    60   ~ 0
 Text Notes 650  7600 0    55   ~ 0
 C1 - C4: Rubycon 8200µF 80V Aluminum Capacitors Radial, Can - Snap-In 3000 Hrs @ 85°C (80USC8200MEFCSN35X45)\nC6: A 0.33 uF or larger tantalum, mylar or other capacitor having low internal impedance at high frequencies should be chosen.\nC7: A 2.2 uF must be solid tantalum. If aluminium electrolytic are used, at least ten times value should be selected.\nC8 - C9: A 1 uF is required if regulator is located an appreciable distance from power supply filter. Also used to improve transient response.\n
 $Comp
-L LED D6
+L LED-RESCUE-ps1 D6
 U 1 1 5869BAB4
 P 8700 4050
 F 0 "D6" H 8700 4150 50  0000 C CNN
@@ -389,7 +390,7 @@ F 3 "" H 9150 3900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D7
+L LED-RESCUE-ps1 D7
 U 1 1 5869C04C
 P 8700 5000
 F 0 "D7" H 8700 5100 50  0000 C CNN
@@ -723,4 +724,6 @@ Text Label 1300 4950 2    60   ~ 0
 -18V
 Text Notes 800  1900 0    60   ~ 0
 Mating Receptacle Molex Mini-Fit Single \nRow Receptacle 39-01-4031
+Entry Wire Line
+	11600 4800 11700 4900
 $EndSCHEMATC
