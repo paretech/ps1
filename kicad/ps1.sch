@@ -166,28 +166,6 @@ F 3 "" H 8150 3850 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R4
-U 1 1 586169BF
-P 7700 3850
-F 0 "R4" V 7780 3850 50  0000 C CNN
-F 1 "R" V 7700 3850 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_Ceramic_Horizontal_L19mm-W8mm-H8mm-p25mm" V 7630 3850 50  0001 C CNN
-F 3 "" H 7700 3850 50  0000 C CNN
-	1    7700 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R5
-U 1 1 58616A82
-P 7700 4750
-F 0 "R5" V 7780 4750 50  0000 C CNN
-F 1 "R" V 7700 4750 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_Ceramic_Horizontal_L19mm-W8mm-H8mm-p25mm" V 7630 4750 50  0001 C CNN
-F 3 "" H 7700 4750 50  0000 C CNN
-	1    7700 4750
-	1    0    0    -1  
-$EndComp
-$Comp
 L Diode_Bridge D1
 U 1 1 58505332
 P 2700 4300
@@ -299,7 +277,7 @@ U 1 1 58629851
 P 7250 3850
 F 0 "C10" H 6950 3900 50  0000 L CNN
 F 1 "SPARE" H 6900 3800 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Radial_D22_L41_P10" H 7250 3850 50  0001 C CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D6.3_L11.2_P2.5" H 7250 3850 50  0001 C CNN
 F 3 "" H 7250 3850 50  0000 C CNN
 	1    7250 3850
 	1    0    0    -1  
@@ -310,13 +288,11 @@ U 1 1 5862995E
 P 7250 4750
 F 0 "C11" H 7500 4700 50  0000 L CNN
 F 1 "220uF" H 7400 4800 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Radial_D22_L41_P10" H 7250 4750 50  0001 C CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D6.3_L11.2_P2.5" H 7250 4750 50  0001 C CNN
 F 3 "" H 7250 4750 50  0000 C CNN
 	1    7250 4750
 	-1   0    0    -1  
 $EndComp
-Text Notes 7500 3300 0    60   ~ 0
-Min. Load\nBleeders
 Text Notes 7100 3200 0    60   ~ 0
 Filter
 Text Label 9300 3350 0    60   ~ 0
@@ -368,28 +344,6 @@ F 3 "" H 8700 3550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R8
-U 1 1 5869BD6A
-P 8950 3550
-F 0 "R8" V 9030 3550 50  0000 C CNN
-F 1 "R" V 8950 3550 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 8880 3550 50  0001 C CNN
-F 3 "" H 8950 3550 50  0000 C CNN
-	1    8950 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L CONN_01X02 P2
-U 1 1 5869BDEF
-P 9150 3900
-F 0 "P2" H 9150 4050 50  0000 C CNN
-F 1 "CONN_01X02" V 9250 3900 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 9150 3900 50  0001 C CNN
-F 3 "" H 9150 3900 50  0000 C CNN
-	1    9150 3900
-	1    0    0    -1  
-$EndComp
-$Comp
 L LED-RESCUE-ps1 D7
 U 1 1 5869C04C
 P 8700 5000
@@ -411,40 +365,8 @@ F 3 "" H 8700 4500 50  0000 C CNN
 	1    8700 4500
 	1    0    0    -1  
 $EndComp
-$Comp
-L R R9
-U 1 1 5869C058
-P 8950 4500
-F 0 "R9" V 9030 4500 50  0000 C CNN
-F 1 "R" V 8950 4500 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 8880 4500 50  0001 C CNN
-F 3 "" H 8950 4500 50  0000 C CNN
-	1    8950 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L CONN_01X02 P3
-U 1 1 5869C05E
-P 9150 4850
-F 0 "P3" H 9150 5000 50  0000 C CNN
-F 1 "CONN_01X02" V 9250 4850 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 9150 4850 50  0001 C CNN
-F 3 "" H 9150 4850 50  0000 C CNN
-	1    9150 4850
-	1    0    0    -1  
-$EndComp
 Text Notes 8650 3300 0    60   ~ 0
 Power\nIndicators
-Text Label 5450 800  2    60   ~ 0
-+15V
-Text Label 5450 1100 2    60   ~ 0
-+15V
-Text Label 5950 800  0    60   ~ 0
-+15V
-Text Label 5450 900  2    60   ~ 0
-GND
-Text Label 5450 1000 2    60   ~ 0
--15V
 $Comp
 L PWR_FLAG #FLG01
 U 1 1 586A90BD
@@ -458,65 +380,11 @@ F 3 "" H -800 950 50  0000 C CNN
 $EndComp
 Text Label -800 950  3    60   ~ 0
 GND
-$Comp
-L CONN_02X06 P5
-U 1 1 586AA92B
-P 5700 1050
-F 0 "P5" H 5700 1400 50  0000 C CNN
-F 1 "CONN_02X06" H 5700 700 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-12A_2x06x4.20mm_Straight" H 5700 600 50  0001 C CNN
-F 3 "" H 5700 -150 50  0000 C CNN
-	1    5700 1050
-	1    0    0    -1  
-$EndComp
-Text Label 5950 1100 0    60   ~ 0
+Text Label 4350 1050 2    60   ~ 0
 +15V
-Text Label 5950 1200 0    60   ~ 0
+Text Label 4350 1150 2    60   ~ 0
 GND
-Text Label 5950 900  0    60   ~ 0
-GND
-Text Label 5450 1200 2    60   ~ 0
-GND
-Text Label 5450 1300 2    60   ~ 0
--15V
-Text Label 5950 1000 0    60   ~ 0
--15V
-Text Label 5950 1300 0    60   ~ 0
--15V
-Text Label 3800 800  2    60   ~ 0
-+15V
-Text Label 3800 1100 2    60   ~ 0
-+15V
-Text Label 4300 800  0    60   ~ 0
-+15V
-Text Label 3800 900  2    60   ~ 0
-GND
-Text Label 3800 1000 2    60   ~ 0
--15V
-$Comp
-L CONN_02X06 P4
-U 1 1 586AB6E7
-P 4050 1050
-F 0 "P4" H 4050 1400 50  0000 C CNN
-F 1 "CONN_02X06" H 4050 700 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-12A_2x06x4.20mm_Straight" H 4950 550 50  0000 C CNN
-F 3 "" H 4050 -150 50  0000 C CNN
-	1    4050 1050
-	1    0    0    -1  
-$EndComp
-Text Label 4300 1100 0    60   ~ 0
-+15V
-Text Label 4300 1200 0    60   ~ 0
-GND
-Text Label 4300 900  0    60   ~ 0
-GND
-Text Label 3800 1200 2    60   ~ 0
-GND
-Text Label 3800 1300 2    60   ~ 0
--15V
-Text Label 4300 1000 0    60   ~ 0
--15V
-Text Label 4300 1300 0    60   ~ 0
+Text Label 4350 1250 2    60   ~ 0
 -15V
 $Comp
 L CONN_01X03 P1
@@ -610,12 +478,9 @@ Connection ~ 7250 4300
 Wire Wire Line
 	7250 3350 7250 3700
 Connection ~ 6750 3350
-Wire Wire Line
-	7700 3350 7700 3700
 Connection ~ 7250 3350
 Wire Wire Line
 	8150 3350 8150 3700
-Connection ~ 7700 3350
 Wire Wire Line
 	8150 4000 8150 4600
 Wire Wire Line
@@ -624,12 +489,6 @@ Connection ~ 6750 5250
 Wire Wire Line
 	7250 4900 7250 5250
 Connection ~ 7250 5250
-Wire Wire Line
-	7700 5250 7700 4900
-Connection ~ 7700 5250
-Wire Wire Line
-	7700 4000 7700 4600
-Connection ~ 7700 4300
 Connection ~ 8150 4300
 Wire Wire Line
 	5550 5750 5850 5750
@@ -695,19 +554,6 @@ Wire Wire Line
 	8700 5200 8700 5250
 Connection ~ 8700 5250
 Wire Wire Line
-	8950 3350 8950 3400
-Connection ~ 8950 3350
-Wire Wire Line
-	8950 3700 8950 3850
-Wire Wire Line
-	8950 3950 8950 4350
-Connection ~ 8950 4300
-Wire Wire Line
-	8950 4650 8950 4800
-Wire Wire Line
-	8950 4900 8950 5250
-Connection ~ 8950 5250
-Wire Wire Line
 	6000 3650 6000 4950
 Connection ~ 6000 4300
 Text Label 1950 1050 0    60   ~ 0
@@ -716,8 +562,6 @@ Text Label 1950 1150 0    60   ~ 0
 GND
 Text Label 1950 1250 0    60   ~ 0
 -18V
-Wire Wire Line
-	3850 4300 9300 4300
 Text Label 1300 3650 2    60   ~ 0
 +18V
 Text Label 1300 4950 2    60   ~ 0
@@ -726,4 +570,17 @@ Text Notes 800  1900 0    60   ~ 0
 Mating Receptacle Molex Mini-Fit Single \nRow Receptacle 39-01-4031
 Entry Wire Line
 	11600 4800 11700 4900
+Wire Wire Line
+	3850 4300 9300 4300
+$Comp
+L CONN_01X03 P2
+U 1 1 587BF2CF
+P 4550 1150
+F 0 "P2" H 4550 1350 50  0000 C CNN
+F 1 "CONN_01X03" V 4650 1150 50  0000 C CNN
+F 2 "ps1:Molex_Mini-Fit_JR-5566-03x3x" H 4550 750 50  0001 C CNN
+F 3 "" H 4550 1150 50  0000 C CNN
+	1    4550 1150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
