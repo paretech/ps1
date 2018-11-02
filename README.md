@@ -4,4 +4,4 @@ ps1 is a dual polarity (+/- 15V) full wave rectified power supply. Schematic cap
 
 Some [requirements](../../wiki/Requirements) are in the works over in the [wiki](../../wiki).
 
-<img src="https://rawgit.com/paretech/ps1/master/gfx/ps1.svg">
+<img src="https://raw.githubusercontent.com/paretech/ps1/master/gfx/ps1.svg">
